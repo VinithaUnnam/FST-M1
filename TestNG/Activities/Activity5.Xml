@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="softwaretestingmaterial">
+	<!-- 1. Run all the tests from this activity. -->
+	<test name="All Tests">
+		<classes>
+			<class name="testNG.Activity5" />
+		</classes>
+		<!-- 2. Run only the tests that are in the HeaderTests group -->
+	</test>
+	<test name="headertestgroups">
+		<groups>
+			<run>
+				<include name="headertest"></include>
+			</run>
+		</groups>
+	</test>
+	<!-- 3. Run only the tests that are in the ButtonTests group. -->
+	<test name="buttontestgroups">
+		<groups>
+			<run>
+				<include name="buttontest"></include>
+			</run>
+		</groups>
+	</test>
+	<!-- 4.Exclude the tests that are in the HeaderTests group. -->
+	<test name="headertestexclude">
+		<groups>
+			<run>
+				<exclude name="HeaderTest"></exclude>
+			</run>
+		</groups>
+	</test>
+</suite>
