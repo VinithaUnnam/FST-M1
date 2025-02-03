@@ -15,6 +15,6 @@ import io.cucumber.junit.platform.engine.Constants;
   value = "stepDefinitions")
 @ConfigurationParameter(
   key = Constants.FILTER_TAGS_PROPERTY_NAME,
-  value = "@activity4")
+  value = "@activity5")
 public class ActivitiesRunner {
 }
