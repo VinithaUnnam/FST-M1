@@ -8,14 +8,12 @@ import org.junit.platform.suite.api.SelectClasspathResource;
 import io.cucumber.junit.platform.engine.Constants;
 
 @Suite
-@IncludeEngines("cucumber") // This will include the Cucumber engine to run tests
-@SelectClasspathResource("Features") // Points to the directory where the feature files are located
+@IncludeEngines("cucumber")
+@SelectClasspathResource("Features")
 @ConfigurationParameter(
-  key = Constants.GLUE_PROPERTY_NAME, // Glue code (step definitions) package
-  value = "stepDefinitions") // Ensure that your step definitions are in this package
+  key = Constants.GLUE_PROPERTY_NAME,
+  value = "stepDefinitions")
 @ConfigurationParameter(
-  key = Constants.FILTER_TAGS_PROPERTY_NAME, // Tag filtering (to run specific scenarios)
-  value = "@activity1") // Only scenarios with the tag @activity1 will run
-public class ActivitiesRunner {
-    // No additional code needed
-}
+  key = Constants.FILTER_TAGS_PROPERTY_NAME,
+  value = "@activity2")
+public class ActivitiesRunner {}
