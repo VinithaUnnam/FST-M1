@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features = "Features",
     glue = {"stepDefinitions"},
-    tags = "@SimpleAlert",
+    tags = "@SmokeTest",
     plugin = {"json: test-reports/json-report.json"},
     monochrome = true
 )
